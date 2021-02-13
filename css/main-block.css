@@ -1,0 +1,68 @@
+.main__block{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+}
+.main__block::before{
+    content: "";
+    display: block;
+    height: 768px;
+    width: 900px;
+    background-color: #ffeaa7;
+    border-radius: 99px;
+    transform: rotate(-45deg) translate(336px, -54px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.main__block::after{
+    content: "";
+    display: block;
+    background:url("../img/circles.svg") top right no-repeat;
+    background-size: contain;
+    height:285px;
+    width: 500px;
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+.main-block__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 115px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #2D3436;
+    max-width: 1000px;
+    margin: 0px auto 22px;
+    
+}
+.main-block__title::first-line {
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 104px;
+    letter-spacing: -3px;
+
+}
+.main-block__title b {
+    color: #E84393;
+    text-shadow: 0px 4px 0px #FFFFFF;
+    font-weight: 800;
+    margin: 0 20px;
+    position: relative;
+
+}
+.main-block__title b::before{
+    content: "";
+    display: inline-block;
+    position: absolute ;
+    bottom: -3.5%;
+    left: -4.5%;
+    border-radius: 99px;
+    z-index: -1;
+    width: 190px;
+    height: 52px;
+    background-color: rgb(99, 221, 201);
+}
