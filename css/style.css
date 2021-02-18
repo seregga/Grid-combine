@@ -1,46 +1,4 @@
 @import "base.css";
 @import "header.css";
 @import "main-block.css";
-
-.portfolio {
-}
-.portfolio__more {
-    display: inline-block;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* width: 270px; */
-}
-.portfolio__more-info {
-    width: 150px;
-    min-width: 100%;
-    margin-bottom: 30px;
-
-}
-
-.portfolio__banner {
-    background: url() center center no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: center;
-    padding: 43px 15px;
-    box-sizing: border-box;
-
-}
-.portfolio__banner-more {
-    background: url("../img/banner1.jpg") ;
-    min-height: 464px;
-    margin-top: 26px;
-}
-.portfolio__text-bold {
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 2px  ;
-}
-.portfolio__banner-text{
-    color: #fff;
-    margin: 0;
-}
-.portfolio__content {
-}
+@import "portfolio.css";

@@ -1,0 +1,145 @@
+.portfolio{
+    display: flex;
+}
+.portfolio__more {
+    display: inline-block;
+    padding-bottom: 70px;
+}
+.portfolio__more-info {
+    width: 150px;
+    min-width: 100%;
+    margin-bottom: 30px;
+}
+
+.portfolio__banner {
+    position: relative;
+    background: url() center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.portfolio__banner-more {
+    background-image: url("../img/banner1.jpg");
+    min-height: 46.4rem;
+    margin-top: 2.6rem;
+    padding: 4.3rem 1.5rem;
+    box-sizing: border-box;
+}
+.portfolio__text-bold {
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 2px  ;
+}
+.portfolio__banner-text{
+    color: #fff;
+    margin: 0;
+}
+.portfolio__title{
+    margin: 0;
+}
+.portfolio__text{
+    margin: 0;
+    margin-top: -5px;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex: 1;
+    margin-left: 30px;
+}
+.portfolio__banner_giant {
+    width: 470px;
+    height: 380px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 17.5px;
+    box-sizing: border-box;
+}
+.portfolio__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.title {
+}
+.title_h1 {
+}
+.portfolio__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    width: 370px;
+}
+/* .text {
+    margin: 0;
+} */
+.portfolio__banner-desc{
+    width: 100%;
+}
+.portfolio__banner_small {
+    width: 170px;
+    height: 222px;
+
+}
+.portfolio__banner_mid {
+    width: 270px;
+    height: 284px;
+}
+.portfolio__banner_big {
+    width: 370px;
+    height: 356px;
+    padding: 17.5px;
+    box-sizing: border-box;
+
+}
+@media screen and (max-width: 1000px){
+    .portfolio{
+        font-size: 2rem;
+        width: 110vw;
+    }
+    .portfolio__content{
+        /* flex-wrap: nowrap; */
+        justify-content: flex-start;
+    }
+    .portfolio_hide{
+        display: none;
+    }
+    .portfolio__banner-more{
+        background: url("../img/banner1-mob.jpg") no-repeat ;
+        width: 13em;
+        height: 22.3em;
+        min-height: auto;
+    }
+    .portfolio__banner_giant {
+        width: 22.4em ;
+        height: 18.3em;
+        padding: 1.75em;
+        /* box-sizing: border-box; */
+    }
+    .portfolio__banner_small {
+        width: 8.4em;
+        height: 10.7em;
+    
+    }
+    .portfolio__banner_mid {
+        width: 13em;
+        height: 13.6em;
+    }
+    .portfolio__banner_big {
+        width: 17.9em;
+        height: 18.2em;
+        padding: 1.75em;
+        box-sizing: border-box;
+    }
+
+}

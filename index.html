@@ -16,6 +16,12 @@
 <body class="body">
     <header class="header">
         <div class="wrap header__wrap ">
+            <!-- menu_show рядом с burger для выпадающего меню-->
+            <a href="#" class="burger ">
+                <div class="burger__line burger__line_top"></div>
+                <div class="burger__line burger__line_middle"></div>
+                <div class="burger__line burger__line_bottom"></div>
+            </a>
             <a href="/" class="logo">
                 <div class="logo__img">
                     <svg width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,27 +49,66 @@
         </div>
     </header>
     <main class="main">
-        <section class="main__block">
+        <section class="main-block">
             <div class="wrap">
-                <h1 class="main-block__title">Combine<b>fine</b>images To represent a product</h1>
+                <h1 class="main-block__title"><span>Combine<b>fine</b>images To represent a product</span></h1>
                 <div class="portfolio">
                     <div class="portfolio__more">
                         <div class="portfolio__more-info">
-                            <p class="text">Use mixed grid with imagery, replace with your own photos and descriptions</p>
+                            <p class="text portfolio__text portfolio_hide">Use mixed grid with imagery, replace with
+                                your own photos and descriptions
+                            </p>
                             <div class="portfolio__banner portfolio__banner-more">
-                                <!-- ниже в первый параграф <P> у Рината добавлен класс portfolio__banner-text"-->
-                                <p class="text portfolio__text-bold">We aimed to deliver HQ templates for Figma</p> 
+                                <p class="text portfolio__text-bold portfolio__banner-text">We aimed to deliver HQ
+                                    templates for Figma</p>
                                 <p class="text text_small portfolio__banner-text">Used by 123 people</p>
                             </div>
-                    
+                            <div class="portfolio__banner portfolio__banner_small ">
+                                <img src="img/banner1-mob-dop.jpg" alt="" class="portfolio__image">
+                            </div>
                         </div>
-                        <a href="#" class="button button_m">Learn more </a>
+                        <a href="#" class="button button_m portfolio_hide">Learn more </a>
                     </div>
-                    <!-- <div class="portfolio__content"> -->
-
+                    <div class="portfolio__content">
+                        <div class="portfolio__banner portfolio__banner_giant">
+                            <img src="img/banner2.jpg" alt="" class="portfolio__image">
+                            <p class="title title_h3 portfolio__title ">Consider it done</p>
+                        </div>
+                        <div class="portfolio__wrap ">
+                            <p class="text portfolio__banner-desc portfolio_hide">This is multipurpose grid, it fits for
+                                portfolio, services or agency web
+                                site</p>
+                            <div class="portfolio__banner portfolio__banner_small ">
+                                <img src="img/banner5.jpg" alt="" class="portfolio__image">
+                                <img src="img/banner5-mob.jpg" alt="" class="portfolio__image">
+                            </div>
+                            <div class="portfolio__banner portfolio__banner_small portfolio_hide">
+                                <img src="img/banner6.jpg" alt="" class="portfolio__image">
+                            </div>
+                        </div>
+                        <div class="portfolio__mobile-wrap">
+                            <div class="portfolio__banner portfolio__banner_mid ">
+                                <img src="img/banner3.jpg" alt="" class="portfolio__image">
+                                <img src="img/banner3-mob.jpg" alt="" class="portfolio__image">
+                            </div>
+                            <div class="portfolio__banner portfolio__banner_mid ">
+                                <img src="img/banner3-mob-dop.jpg" alt="" class="portfolio__image">
+                            </div>
+                        </div>
+                        <div class="portfolio__mobile-wrap">
+                            <div class="portfolio__banner portfolio__banner_big ">
+                                <img src="img/banner4.jpg" alt="" class="portfolio__image">
+                                <img src="img/banner4-mob.jpg" alt="" class="portfolio__image">
+                                <p class="title title_h3 portfolio__title">See my goal</p>
+                            </div>
+                            <a href="#" class="button button_m">Learn more </a>
+                        </div>
+                        <div class="portfolio__banner portfolio__banner_small portfolio_hide">
+                            <img src="img/banner7.jpg" alt="" class="portfolio__image">
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
     </main>

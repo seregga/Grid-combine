@@ -1,39 +1,70 @@
+:root{
+    font-size: 10px;
+    --white: #ffffff;
+    --black: #2D3436;
+    --purple:#6c5ce7;
+    --orange:#fdcb6e;
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-Regular: 400;
+    --font-Medium: 500;
+    --font-Semi-bold: 600;
+    --font-Bold: 700;
+    --font-Extra-bold: 800;
+    --font-Black: 900;
+}
 .body {
+    font-size: 10px;
     margin: 0;
     font-family: "inter", "sans-serif"; 
 }
 .wrap{
-    width: 1170px;
+    width: 117em;
     margin: 0 auto;
 }
 .button {
     display: inline-block;
     font-family: "Inter";
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.25px;
-    color: #fff;
-    padding: 14.6px 44.5px 13.4px;
+    font-weight: var(--font-Bold);
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.025rem;
+    color:var(--white);
+    padding: 1.46rem 4.45rem 1.34rem;
     text-decoration: none;
-    background: #2D3436;
+    background: var(--purple);
     border-radius: 999px;
-    /* box-sizing: border-box; */
-    /* width: 170px;
-    height: 64px;
-    text-align: center; */
 }
 .button_m {
-    font-size: 32px;
-    line-height: 48 px;
-    letter-spacing: -0.5px;
-    padding: 24px 49.5px;
-    /* color: #6C5CE7;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 24px rgba(38, 50, 56, 0.1), 0px 16px 32px rgba(38, 50, 56, 0.08);
-    border-radius: 999px;
-    width: 270px;
-    height: 82px;
-    text-align: center; */
+    font-size: 3.2rem;
+    line-height: 4.8 rem;
+    letter-spacing: -0.05rem;
+    padding: 2.4rem 4.95rem 1.65rem;
+    background-color: #6C5CE7;
+}
+@media screen and (min-width: 2200px){
+    :root{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 3000px){
+    :root{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1280px){
+    :root{
+        font-size: 8.3px;
+    }
+}
+@media screen and (max-width: 1000px){
+    :root{
+        font-size: 10px;
+    }
+    .wrap{
+        width: 90%;
+    }
+    
 }
