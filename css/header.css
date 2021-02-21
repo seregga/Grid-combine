@@ -186,3 +186,43 @@
     }
 
 }
+@media screen and (max-width: 400px){
+    .header{
+        height:7.2rem;
+    }
+    .burger{
+        width: 2rem;
+        height: 1.4rem;
+        margin-right: 1.6rem;
+        margin-left: 1rem;
+    }
+    .burger__line{
+        height: .2rem;
+        border-radius: .2rem;
+        background: var(--gray);
+
+    }
+    .menu_show .burger__line_top{
+        top:calc(50% - .1rem);        
+    }
+    .menu_show .burger__line_bottom{        
+        bottom: calc(50% - .1rem);   
+        
+    }         
+    .menu__link{
+        font-size: 2rem;
+    }
+    .menu__link{
+        padding: 10rem 4rem 0 5%;
+    }
+    .logo__text{
+        font-size: 2.4rem;
+        line-height: 1.5rem;
+        color: var(--gray);
+        letter-spacing: .02rem;
+        padding-top: 0.01rem;
+    }
+    .menu__sign{
+        padding: .5rem 3.3rem 0.3rem;
+    }
+}

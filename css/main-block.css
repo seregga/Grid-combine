@@ -27,6 +27,7 @@
     position: absolute;
     top: 17px;
     right: 0;
+    z-index: -1;
 }
 .main-block__title {
     font-weight: 900;
@@ -35,22 +36,23 @@
     text-align: center;
     letter-spacing: -1px;
     color: #2D3436;
-    min-width: 1000px;
+    /* сам менял min на max ниже */
+    max-width: 100rem;
     margin: 0px auto 43px;
     
 }
 .main-block__title::first-line {
-    font-weight: 800;
+    font-weight: var(--font-Extra-bold);
     font-size: 1.5em;
     line-height: 1.08em;
     letter-spacing: -.03em;
 
 }
 .main-block__title b {
-    color: #E84393;
-    text-shadow: 0px 4px 0px #FFFFFF;
-    font-weight: 800;
-    margin: 0 20px;
+    display: inline-block;
+    color: var(--red);
+    /* text-shadow: 0px 4px 0px #FFFFFF; */
+    /* margin: 0 2rem; */
     position: relative;
 
 }
@@ -61,17 +63,99 @@
     bottom: -3.5%;
     left: -4.5%;
     border-radius: 99px;
-    z-index: -1;
     width: 190px;
     height: 52px;
     background-color: rgb(99, 221, 201);
+    z-index: -1;
 }
+
+.main-block_hide_hd{
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .main-block {
-        padding-top: 12rem;
+        padding: 12rem 0 ; /* РИНАТ padding-top: 12rem*/
         box-sizing: border-box;
     }
     .main-block__title{
         font-size: 4rem;
     }
+    .main-block__title b::before{        
+        width: 12.2rem; /**/
+        height: 3rem; /**/
+    }    
+}
+
+@media screen and (max-width: 690px) {
+    .main-block__title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-block__title{
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }   
+}
+@media screen and (max-width: 400px) {  
+    .main-block_hide_hd{
+        display: block;
+
+    }
+    .main-block_hide{
+        display: none;
+    }
+    .main-block{
+        background: url("../img/Wave.png") top center no-repeat;
+        background-size: 100%;
+    }
+    .main-block__title{
+        font-size: 4.8rem;
+        width: 90%;
+        line-height: 1.65em;
+        margin-bottom: 1.8rem;
+    }
+    .main-block__title::first-line {
+        font-size: 1.333em;
+        line-height: 1.08em;
+        letter-spacing: -.03em;
+        
+    }
+    .main-block__subtitle{
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        letter-spacing: 0.025rem; 
+        color: var(--black);
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 2rem;
+
+    }
+    .main-block__arrow{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 6.4rem;
+        height: 6.4rem;
+        margin: 0 auto;
+        border-radius: 100%;
+        background: var(--milk);
+        margin-bottom: 1.5rem;
+    }
+    .main-block::after{
+        height:21rem;
+        width: 14.1rem;
+        top: 5.5rem;
+        right: -1.45rem;
+    }
+    .main-block::before{        
+        height: 42.26rem;
+        width: 50rem;
+        border-radius: 5.448rem;
+        transform: translate(27.2rem, -8.3rem) rotate(-45deg);
+    }
+    
 }
