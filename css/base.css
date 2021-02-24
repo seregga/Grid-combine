@@ -6,16 +6,21 @@
     --gray: #5C5C5C;
     --purple:#6c5ce7;
     --orange:#fdcb6e;
-    --red:#E84393;
+    --red:#D63031;
+    --pink:#E84393;
+    --blue:#0984E3;
+    --green:#00B894;
+    --gray-soft:#C2C2C2;
+    --green-light:#55EFC4;
     --font-thin: 100;
     --font-extra-light: 200;
     --font-light: 300;
-    --font-Regular: 400;
-    --font-Medium: 500;
-    --font-Semi-bold: 600;
-    --font-Bold: 700;
-    --font-Extra-bold: 800;
-    --font-Black: 900;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
 }
 
 .body {
@@ -33,7 +38,7 @@
     display: inline-block;
     font-family: "Inter";
     font-style: normal;
-    font-weight: var(--font-Bold);
+    font-weight: var(--font-bold);
     font-size: 2.4rem;
     line-height: 3.6rem;
     letter-spacing: 0.025rem;
@@ -51,6 +56,16 @@
     padding: 2.4rem 4.95rem 1.65rem;
     background-color: #6C5CE7;
 }
+.button_transparent{
+    background: transparent;
+    color: var(--purple);
+    border: .1rem solid #ADADAD;
+    border-radius: 1.6rem;
+}
+.button_s{
+    font-size: 1.8rem;
+    padding: .5rem 2.1rem;
+}
 
 @media screen and (min-width: 2200px){
     :root{
@@ -63,12 +78,12 @@
         font-size: 14px;
     }
 }
-
-@media screen and (max-width: 1280px){
+/* у рината есть */
+/* @media screen and (max-width: 1280px){
     :root{
-        font-size: 8.3px; /* проверить */
+        font-size: 8.3px;  
     }
-}
+} */
 
 @media screen and (max-width: 1000px){
     :root{

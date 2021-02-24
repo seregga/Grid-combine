@@ -1,0 +1,51 @@
+.services {
+    margin-bottom: 15.5rem;
+}
+.pricing__main-title{
+    margin: 0;
+}
+.services__title {
+    margin: 0 0 1.84rem 0;
+}
+
+.services__main-text {
+    margin: 0;
+    max-width: 96rem;
+}
+.services__card-wrap {
+    display: flex;
+    margin-top: 4rem;
+}
+.services__card {
+    flex: 1 1;
+    margin-right: 3rem;
+}
+.services__card:last-child{
+    margin: 0;
+}
+.services__icon-wrap {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.services__icon-wrap_red{
+    background-color: var(--pink);
+}
+.services__icon-wrap_blue{
+    background-color: var(--blue);
+}
+.services__icon-wrap_purple{
+    background-color: var(--purple);
+}
+.services__icon-wrap_green{
+    background-color: var(--green);
+}
+.services__subtitle {
+    margin: 2.4rem 0 1rem;
+}
+.services__text {
+    margin: 0 0 1.2rem;
+}

@@ -37,6 +37,7 @@
 }
 .portfolio__title{
     margin: 0;
+    color: var(--white);
 }
 .portfolio__text{
     margin: 0;
@@ -100,6 +101,10 @@
 .portfolio__banner-desc{
     width: 100%;
 }
+.portfolio_hide_hd{
+    display: none;
+
+}
 
 @media screen and (max-width: 1000px){
     .portfolio{
@@ -116,11 +121,11 @@
         width: 45em;
         flex: 0 0 auto;
     }
+    .portfolio_hide_hd{
+        display: block ;
+    }
     .portfolio_hide{
         display: none;
-    }
-    .portfolio_hide_hd{
-        display: block;
     }
     .portfolio__banner-more{
         /* center center /cover no-repeat; добавил я*/

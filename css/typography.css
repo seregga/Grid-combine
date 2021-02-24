@@ -1,79 +1,79 @@
 .title{
     font-family: "Inter";
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     font-size: 2.4rem;
-    line-height: 36px;
-    letter-spacing: 0.25px;
+    line-height: 3.6rem;
+    letter-spacing: 0.025rem;
     color: #2D3436;
 
 }
 .title_h1{
-    font-weight: 800;
+    font-weight: var(--font-extra-bold);
     font-size: 9.6rem;
-    line-height: 104px;
-    letter-spacing: -3px;   
+    line-height: 10.4rem;
+    letter-spacing: -.3rem;   
 }
 .title_h2{
-    font-weight: 900;
+    font-weight: var(--font-black);
     font-size: 6.4rem;
-    line-height: 77px;
-    letter-spacing: -1px;
+    line-height: 7.7rem;
+    letter-spacing: -.1rem;
 
 }
 .title_h3{
     font-size: 4.8rem;
-    line-height: 56px;
-    letter-spacing: -1px;
+    line-height: 5.6rem;
+    letter-spacing: -.1rem;
 
 }
 .title_h4{
     font-size: 3.2rem;
-    line-height: 48px;
-    letter-spacing: -0.5px;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
 }
 .text{
     font-style: "normal";
-    font-weight: 400;
+    font-weight: var(--font-regular);
     font-size: 1.8rem;
-    line-height: 32px;
+    line-height: 3.2rem;
     color: #2D3436;
 }
 .text_big{
     font-size: 2.4rem;
-    line-height: 36px;
-    letter-spacing: -0.25px;    
+    line-height: 3.6rem;
+    letter-spacing: -0.025rem;    
 
 }
 .text_medium{
     font-weight: 500;
     font-size: 2.4rem;
-    line-height: 36px;
-    letter-spacing: -0.25px;    
+    line-height: 3.6rem;
+    letter-spacing: -0.025rem;    
 
 }
 .text_small{
     font-size: 1.4rem;
-    line-height: 24px;
-    letter-spacing: 0.25px;    
+    line-height: 2.4rem;
+    letter-spacing: 0.025rem;    
 
 }
 .text_bold{
-    font-weight: 700;
+    font-weight: var(--font-bold);
     font-size: 1.4rem;
-    line-height: 24px;
-    letter-spacing: 0.2px;    
+    line-height: 2.4rem;
+    letter-spacing: 0.02rem;    
 
 }
 .text_minicaps{
     font-family: "Inter";
     font-style: normal;
-    font-weight: 800;
+    font-weight: var(--font-extra-bold);
     font-size: 1.2rem;
-    line-height: 15px;
-    display: flex;
+    line-height: 1.5rem;
+    /* display: flex; */
     align-items: center;
-    letter-spacing: 2.5px;
+    letter-spacing: .25rem;
     text-transform: uppercase;
 
 }
@@ -120,13 +120,13 @@
         letter-spacing: 0.25px;     
     }
     .title_h1{
-        font-weight: 800;
+        font-weight: var(--font-extra-bold);
         font-size: 9.6rem;
         line-height: 10.4rem;
         letter-spacing: -.3rem;   
     }
     .title_h2{
-        font-weight: 900;
+        font-weight: var(--font-black);
         font-size: 6.4rem;
         line-height: 7.7rem;
         letter-spacing: -.1rem;
@@ -174,15 +174,10 @@
     
     }
     .text_minicaps{
-        /* font-family: "Inter";
-        font-style: 400;
-        font-weight: 800; */
         font-size: 1.2rem;
         line-height: 1.5rem;
         display: flex;
         align-items: center;
-        letter-spacing: .25rem;
-        /* text-transform: uppercase; */
-    
+        letter-spacing: .25rem;            
     }
 }
