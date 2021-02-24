@@ -1,0 +1,111 @@
+:root{
+    font-size: 10px;
+    --white: #ffffff;
+    --milk: #FCF8EA;
+    --black: #2D3436;
+    --gray: #5C5C5C;
+    --purple:#6c5ce7;
+    --orange:#fdcb6e;
+    --red:#E84393;
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-Regular: 400;
+    --font-Medium: 500;
+    --font-Semi-bold: 600;
+    --font-Bold: 700;
+    --font-Extra-bold: 800;
+    --font-Black: 900;
+}
+
+.body {
+    font-size: 10px;
+    margin: 0;
+    font-family: "inter", "sans-serif"; 
+}
+
+.wrap{
+    width: 117em;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: var(--font-Bold);
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.025rem;
+    color:var(--white);
+    padding: 1.46rem 4.45rem 1.34rem;
+    text-decoration: none;
+    background: var(--purple);
+    border-radius: 999px;
+}
+
+.button_m {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.05rem;
+    padding: 2.4rem 4.95rem 1.65rem;
+    background-color: #6C5CE7;
+}
+
+@media screen and (min-width: 2200px){
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 3000px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    :root{
+        font-size: 8.3px; /* проверить */
+    }
+}
+
+@media screen and (max-width: 1000px){
+    :root{
+        font-size: 10px;
+    }
+    .wrap{
+        width: 90%;
+    }
+
+@media screen and (max-width: 690px){
+    .button_m{
+        font-size: 2.5rem;
+        padding: 1.2rem 4rem;
+    }    
+}
+
+@media screen and (max-width: 560px){ 
+    .button_m{
+        font-size: 2rem;
+        padding: .5rem 3rem;
+    }
+    
+}
+@media screen and (max-width: 560px){ /**/
+    .button_m{
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+        padding: 1.2rem 3rem;
+    }  
+}
+
+@media screen and (max-width: 400px){ 
+    .wrap{
+        width: 91.6%;
+    }
+    .button{
+        font-size: 1.8rem;
+        line-height: 3.2rem; 
+    }  
+}
