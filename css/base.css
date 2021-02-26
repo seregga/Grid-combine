@@ -10,7 +10,7 @@
     --pink:#E84393;
     --blue:#0984E3;
     --green:#00B894;
-    --gray-soft:#C2C2C2;
+    --gray-soft:#f0f0f0;
     --green-light:#55EFC4;
     --font-thin: 100;
     --font-extra-light: 200;
@@ -30,7 +30,7 @@
 }
 
 .wrap{
-    width: 117em;
+    width: 117rem;
     margin: 0 auto;
 }
 
@@ -78,21 +78,20 @@
         font-size: 14px;
     }
 }
-/* у рината есть */
-/* @media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px){  
     :root{
         font-size: 8.3px;  
     }
-} */
+}
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px){ 
     :root{
         font-size: 10px;
     }
     .wrap{
         width: 90%;
     }
-
+}
 @media screen and (max-width: 690px){
     .button_m{
         font-size: 2.5rem;
@@ -104,6 +103,10 @@
     .button_m{
         font-size: 2rem;
         padding: .5rem 3rem;
+    }
+    .button_s{
+        font-size: 1.35rem;
+        padding: .2rem 2rem;
     }
     
 }

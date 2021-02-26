@@ -1,0 +1,232 @@
+.pricing {
+    text-align: center;
+}
+
+.title_h3 {
+}
+.pricing__main-title {
+    margin: 3rem 0 0;
+}
+.title_h4 {
+}
+.pricing__subtitle {
+    font-weight: var(--font-bold);
+}
+.pricing__period {
+}
+.pricing__period_choose {
+}
+.pricing__cards {
+    text-align: left;
+    display: flex;
+    margin: 3.7rem 0 0;
+    position: relative;
+}
+.pricing__card {
+    flex: 1 1 0;
+    margin-right: 3rem;
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: relative;
+}
+.pricing__card:last-child{
+    margin-right: 0;
+}
+.pricing__card:nth-child(2){
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
+}
+/* закомментировано мной пото му что я задал background: white для .pricing__card таким образом спрятал .pricing__card:nth-child(2)::before ...
+.pricing__cards::before{
+    content: "";
+    display: block;
+    height: 12.6rem;
+    width: 20rem;
+    background: url(../img/wiggle.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 37rem;
+    bottom: -3rem;
+    z-index: 2;
+} */
+.pricing__card:nth-child(2)::before{
+    content: "";
+    display: block;
+    height: 12.6rem;
+    width: 20rem;
+    background: url(../img/wiggle.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -3rem;
+    bottom: -3rem;
+    z-index: -5;
+}
+.text {
+}
+.pricing__title {
+    font-weight: var(--font-bold);
+    color: var(--purple);
+    margin: 0 0 1.6rem;
+}
+.pricing__price {
+}
+.pricing__price-num {
+    font-weight: var(--font-bold);
+    margin: 0 .7rem 0 0;
+}
+.pricing__price-period {
+    font-weight:var(--font-extra-bold);
+}
+.pricing__features {
+    margin: 0;
+    margin-top: 2.7rem ;
+    list-style: none;
+    padding: 0;
+    margin-bottom: auto;
+}
+.pricing__feature {
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.pricing__feature:last-child{
+    margin: 0 0 2rem;
+}
+.pricing__feature::before {
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: var(--gray-soft) center center no-repeat ;
+    background-size: 40%;
+    border-radius: 100%;
+    margin-right: 1.6rem;
+}
+.pricing__feature::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url("../icons/accept.svg") center center no-repeat ;
+    background-size: 40%;
+}
+.pricing__card:nth-child(2) .pricing__feature::before {
+    background-color: var(--orange);
+}
+.pricing__card:nth-child(3) .pricing__feature::before {
+    background-color: var(--green-light);
+}
+.pricing__button{
+    text-align: center;
+    padding: 1.36rem 1.5rem;
+    border-radius: 1.6rem;
+}
+
+@media screen and (max-width: 1000px){
+    .pricing__cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .pricing__card{
+        flex: 0 1 37rem;
+        /* width: 37rem; 
+        flex: none; */
+        /* у рината вместо(flex:0 1 37rem;) записано (width: 37rem; и flex: none;)   */
+        margin-right: 0;
+        box-shadow: 0 0.8rem 2rem rgb(0, 0, 0, 0.25);
+        margin-bottom: 3rem;
+    }
+    .pricing__card:nth-child(2)::before{
+        display: none;
+    }
+    .pricing__main-title{
+        font-size: 5rem;
+
+    }
+    .pricing__feature,
+    .pricing__title{
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+    .pricing__button{
+        font-weight: var(--font-bold);
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        letter-spacing: 0.025rem;
+        color: var(--white);
+        padding: 1.46rem 4.45rem 1.34rem;
+        background: var(--purple);
+    }
+    .pricing__card:nth-child(2){
+        order:1  ; 
+        background:var(--purple);
+ 
+    }
+    .pricing__card:nth-child(2) .pricing__title{
+        color:var(--green-light)
+    }
+    .pricing__card:nth-child(2) .pricing__price-num,
+    .pricing__card:nth-child(2) .pricing__price-period{
+        color:var(--white);
+        text-shadow: 0px 4px 0px #000000;
+    }
+    .pricing__card:nth-child(2) .pricing__feature{
+        color: var(--white);
+    }
+    .pricing__card:nth-child(2) .pricing__feature::before{
+        background: var(--black);
+    }
+    .pricing__card:nth-child(2) .pricing__feature::after{
+        filter: invert(100%);
+    }
+    .pricing__card:nth-child(2) .pricing__button{
+        color: var(--black);
+        background: var(--white);
+    }
+
+}
+@media screen and (max-width: 550px){
+    .pricing__main-title{
+        font-size: 3.2rem;
+        line-height: 1.5;
+    }
+    .pricing__subtitle{
+        font-size: 2.4rem;
+        line-height: 1.5;
+        color: var(--gray-soft);
+        font-weight: var(--font-regular);
+    }
+    .pricing__feature,
+    .pricing__title{
+        font-size: 1.4rem;
+        line-height: 1.71;
+    }
+    .pricing__button{         
+        font-size: 1.8rem;
+        line-height: 1.78;
+        padding: 1rem 4.45rem ;
+    }
+    .pricing__card{
+        width: 100%;
+    }
+    .pricing__price-num{
+        font-size: 2.4rem;
+        line-height: 1.5rem;
+    }
+    .pricing__price-period{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+
+ 

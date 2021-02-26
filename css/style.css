@@ -3,122 +3,137 @@
 @import "main-block.css";
 @import "portfolio.css";
 @import "services.css";
+@import "pricing.css";
 
-.pricing {
-    text-align: center;
+
+.footer {
+    margin-top: 10rem;
 }
-.wrap {
+.footer__wrap{
+    display: grid;
+    grid-template-areas: "social mail"
+                            "info form";
 }
-.title_h3 {
+
+.footer__social {
+    grid-area: social;
 }
-.pricing__main-title {
-    margin: 3rem 0 0;
-}
-.title_h4 {
-}
-.pricing__subtitle {
-    font-weight: var(--font-bold);
-}
-.pricing__period {
-}
-.pricing__period_choose {
-}
-.pricing__cards {
-    text-align: left;
-    display: flex;
-    margin: 3.7rem 0 0;
-    position: relative;
-}
-.pricing__card {
-    flex: 1 1 0;
-    margin-right: 3rem;
-    border-radius: 1.6rem;
-    padding: 3.2rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    position: relative;
-}
-.pricing__card:last-child{
-    margin-right: 0;
-}
-.pricing__card:nth-child(2){
-    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, .25);
-}
-/* .pricing__cards::before{
-    content: "";
-    display: block;
-    height: 12.6rem;
-    width: 20rem;
-    background: url(../img/wiggle.svg) center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: 37rem;
-    bottom: -3rem;
-    z-index: 2;
-} */
-.pricing__card:nth-child(2)::before{
-    content: "";
-    display: block;
-    height: 12.6rem;
-    width: 20rem;
-    background: url(../img/wiggle.svg) center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -3rem;
-    bottom: -3rem;
-    z-index: -5;
-}
-.text {
-}
-.pricing__title {
-    font-weight: var(--font-bold);
-    color: var(--purple);
-    margin: 0 0 1.6rem;
-}
-.pricing__price {
-}
-.pricing__price-num {
-    font-weight: var(--font-bold);
-    margin: 0 .7rem 0 0;
-}
-.pricing__price-period {
-    font-weight:var(--font-extra-bold);
-}
-.pricing__features {
-    margin: 0;
-    margin-top: 2.7rem ;
-    list-style: none;
-    padding: 0;
-    margin-bottom: auto;
-}
-.pricing__feature {
-    margin-bottom: 2.4rem;
-    display: flex;
+.footer__title {
+    font-weight: var(--font-extra-bold);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     align-items: center;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: #ADADAD;
+    margin: 0;
+    margin-bottom: 1rem;
 }
-.pricing__feature:last-child{
-    margin: 0 0 2rem;
-}
-.pricing__feature::before {
-    content: "";
-    display: block;
-    width: 3.2rem;
-    height: 3.2rem;
-    background: url("../icons/accept.svg") var(--gray-soft) center center no-repeat ;
+.social__link {
+    margin-right: 3.7rem;
+    display: inline-block;
     border-radius: 100%;
-    margin-right: 1.6rem;
 }
-.pricing__card:nth-child(2) .pricing__feature::before {
-    background-color: var(--orange);
+.social__link:hover {
+    background: var(--orange);
 }
-.pricing__card:nth-child(3) .pricing__feature::before {
-    background-color: var(--green-light);
+.social__icon {
+    /* width: 100%;
+    height: 100%; */
 }
-.pricing__button{
-    text-align: center;
-    padding: 1.36rem 1.5rem;
+.footer__mail {
+}
+.footer__mail-link {
+    font-weight: var(--font-bold);
+    font-size: 3.2rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+    color: var(--purple);
+    text-decoration: none;
+
+}
+.footer__info {
+}
+.footer__info-wrap {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, 4rem);
+    grid-template-columns: repeat(3, 20rem);
+}
+.footer__link {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    letter-spacing: .025rem;
+    /* text-decoration-line: underline; */
+    color: var(--black);
+    text-decoration: none;
+}
+.footer__link:hover{
+    text-decoration: underline;
+}
+.footer__form{
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(4, 17rem);
+    grid-gap: 3rem ;
+}
+.footer__form-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 4;
+    margin: 0;
+}
+.footer__input {
+    grid-row: 2 / 3;
+    grid-column: span 2;
+    height: 4.8rem; 
+    background: var(--gray-soft) url(../icons/user.svg) right no-repeat; /**/
+    border: none;
+    border-radius: 1.6rem;
+    padding: 0 1.6rem;   
+    /* background-image: url(../icons/user.svg); 
+    background-repeat: no-repeat;
+    background-image: cen; */
+}
+.footer__input:last-of-type{
+    background-image: url(../icons/mail.svg);
+    background-repeat: no-repeat;
+}
+.footer__input::placeholder{
+    color: var(--black);
+}
+.footer__textarea-wrap{
+    grid-row: 3 / 4;
+    grid-column: span 3;
+    height: 8rem;
+    position: relative;
+}
+.footer__textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    box-sizing: border-box;
+    padding: 1.6rem 5rem 1.6rem 1.6rem;
+    background: var(--gray-soft);
+    border: none;
     border-radius: 1.6rem;
 }
+.footer__form-icon{
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+.footer__form-icon path{
+    stroke: var(--gray);
+    stroke-width: 2;
+}
+.footer__textarea:focus + .footer__form-icon path{
+    stroke: var(--purple);
+    stroke-width: 3;
+}
+.footer__button {
+}
 
+
+/* .footer__textarea::placeholder{
+    color: var(--black); 
+}*/

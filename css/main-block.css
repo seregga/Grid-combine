@@ -54,10 +54,10 @@
     display: inline-block;
     color: var(--red);
     font-weight: var(--font-extra-bold);
-    font-size: 96px;
-    line-height: 104px;
-    text-shadow: 0px 4px 0px #FFFFFF;
-    /* margin: 0 2rem; */
+    font-size: 9.6rem;
+    line-height: 10.4rem;
+    text-shadow: 0 .4rem 0 #FFFFFF;
+    margin: 0 2rem;
     position: relative;
 
 }
@@ -67,9 +67,9 @@
     position: absolute ;
     bottom: -3.5%;
     left: -4.5%;
-    border-radius: 99px;
-    width: 190px;
-    height: 52px;
+    border-radius: 9.9rem;
+    width: 19rem;
+    height: 5.2rem;
     background-color: rgb(99, 221, 201);
     z-index: -1;
 }
@@ -80,18 +80,19 @@
 
 @media screen and (max-width: 1000px) {
     .main-block {
-        padding: 12rem 0 ; /* РИНАТ padding-top: 12rem*/
+        padding: 12rem 0 ;  
         box-sizing: border-box;
     }
     .main-block__title{
         font-size: 4rem;
     }
-    /* .main-block__title b {          
+    .main-block__title b {          
         font-weight: var(--font-extra-bold);
         font-size: 6rem;
         line-height: 7rem;
-        text-shadow: 0 .4rem 0 #FFFFFF;          
-    } */
+        text-shadow: 0 .4rem 0 #FFFFFF;  
+        margin: auto;        
+    }
     .main-block__title b::before{        
         width: 12.2rem;  
         height: 3rem; 
@@ -102,6 +103,17 @@
     .main-block__title{
         font-size: 3rem;
     }
+    .main-block__title b {          
+        font-weight: var(--font-extra-bold);
+        font-size: 5rem;
+        line-height: 7rem;
+        text-shadow: 0 .4rem 0 #FFFFFF;  
+        margin: auto;        
+    }
+    .main-block__title b::before{        
+        width: 10.2rem;  
+        height: 2.5rem; 
+    }    
 }
 
 @media screen and (max-width: 500px) {
@@ -109,6 +121,18 @@
         font-size: 2.5rem;
         line-height: 5rem;
     }   
+    .main-block__title b {          
+        font-weight: var(--font-extra-bold);
+        font-size: 4rem;
+        line-height: 7rem;
+        text-shadow: 0 .4rem 0 #FFFFFF;  
+        margin: auto;        
+    }
+    .main-block__title b::before{        
+        width: 8.2rem;  
+        height: 2rem; 
+        margin: 0 0 1rem;
+    }    
 }
 @media screen and (max-width: 400px) {  
     .main-block_hide_hd{
@@ -123,11 +147,26 @@
         background-size: 100%;
     }
     .main-block__title{
+        font-weight: var(--font-black);
         font-size: 4.8rem;
         width: 90%;
         line-height: 1.65em;
         margin-bottom: 1.8rem;
+        text-shadow: 0 .4rem 0 #FFFFFF;  
+
     }
+    .main-block__title b {          
+        font-weight: var(--font-extra-bold);
+        font-size: 5rem;
+        line-height: 7rem;
+        text-shadow: 0 .4rem 0 #FFFFFF;  
+        margin: auto;        
+    }
+    .main-block__title b::before{        
+        width: 12rem;
+        height: 3rem;
+        margin: 0rem 0rem 0rem 0.4rem;
+    }    
     .main-block__title::first-line {
         font-size: 1.333em;
         line-height: 1.08em;
@@ -146,15 +185,18 @@
 
     }
     .main-block__arrow{
+        /* display: flex;
         align-items: center;
-        justify-content: center;
-        display: flex;
+        justify-content: center; не работает так как его перетирает.main-block_hide_hd{
+        display: block;*/
         width: 6.4rem;
         height: 6.4rem;
         margin: 0 auto;
         border-radius: 100%;
         background: var(--milk);
         margin-bottom: 1.5rem;
+        padding: .8rem .8rem;
+        box-sizing: border-box;
     }
     .main-block::after{
         height:21rem;
