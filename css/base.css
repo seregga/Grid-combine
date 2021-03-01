@@ -127,3 +127,8 @@
         line-height: 3.2rem; 
     }  
 }
+@media screen and (max-width: 350px){  
+    :root{
+        font-size: 8px;  
+    }
+}
