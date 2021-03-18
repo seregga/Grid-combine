@@ -2,19 +2,11 @@
     text-align: center;
 }
 
-.title_h3 {
-}
 .pricing__main-title {
     margin: 3rem 0 0;
 }
-.title_h4 {
-}
 .pricing__subtitle {
     font-weight: var(--font-bold);
-}
-.pricing__period {
-}
-.pricing__period_choose {
 }
 .pricing__cards {
     text-align: left;
@@ -64,15 +56,13 @@
     bottom: -3rem;
     z-index: -5;
 }
-.text {
-}
+
 .pricing__title {
     font-weight: var(--font-bold);
     color: var(--purple);
     margin: 0 0 1.6rem;
 }
-.pricing__price {
-}
+
 .pricing__price-num {
     font-weight: var(--font-bold);
     margin: 0 .7rem 0 0;
@@ -149,7 +139,6 @@
     }
     .pricing__main-title{
         font-size: 5rem;
-
     }
     .pricing__feature,
     .pricing__title{
