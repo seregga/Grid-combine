@@ -166,10 +166,16 @@
     box-sizing: border-box;
     box-shadow: 0 .8rem 2.4rem rgba(38, 50, 56, 0.1), 0 1.6rem 3.2rem rgba(38, 50, 56, 0.08);
     transition: color 0.6s ease, background-color 0.6s ease;
+    outline: none;
+
 }
 .footer__button:hover{
     color: var(--purple);
     background: transparent;
+}
+.footer__button:focus{
+    border: .2rem #DCD8F9 solid;
+
 }
 @media screen and (max-width: 1000px){
     .footer__wrap{
